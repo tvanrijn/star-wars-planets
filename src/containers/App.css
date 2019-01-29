@@ -1,0 +1,38 @@
+@font-face {
+font-family: 'Cool jazz';
+font-style: normal;
+font-weight: normal;
+src: local('Cool jazz'), url('Cooljazz.woff') format('woff');
+}
+
+h1 {
+	font-family: 'Cool jazz';
+	font-weight: 800;
+}
+
+/* loading dots */
+.loadingBar:after {
+	content: ' .';
+  	animation: dots 1.2s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: black;
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 black,
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 black,
+      .5em 0 0 black;}}
+

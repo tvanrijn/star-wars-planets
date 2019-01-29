@@ -1,0 +1,17 @@
+.bg-grey {
+    background-color: #e2e1e2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icon {
+    position: relative;
+    margin-right: 5px;
+    top: 5px;
+  }
+
+li {
+    text-align: left;
+}
