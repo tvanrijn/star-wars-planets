@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../Card/Card';
 
 const CardList = ({ planets }) => {
 	return (
-		<div>
+		<div data-testid='cardlist'>
 			{
 				planets.map((planet, i) => {
 					return (
