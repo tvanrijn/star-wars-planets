@@ -7,7 +7,7 @@ import Scroll from "../components/Scroll/Scroll";
 import LoadingBar from "../components/LoadingBar/LoadingBar";
 import "./App.css";
 
-const GET_PLANETS = gql`
+export const GET_PLANETS = gql`
   {
     planets {
       name
@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <div className="tc">
-      <h1 className="f1">Star Wars Planets</h1>
+      <h1 data-testid="title" className="f1">Star Wars Planets</h1>
       <SearchBox searchChange={onSearchChange} />
       <Scroll>
         <CardList planets={filteredPlanets} />
